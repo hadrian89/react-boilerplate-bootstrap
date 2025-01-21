@@ -1,0 +1,19 @@
+.App {
+  background: #fff;
+  height: 100vh;
+}
+
+.listing {
+  list-style: none;
+  padding: 10px;
+  padding-left: 0 !important;
+  margin-left: 0;
+}
+
+.listing li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+main {
+  margin-top: 100px;
+}
