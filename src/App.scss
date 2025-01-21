@@ -1,0 +1,21 @@
+.App {
+  background: #fff;
+  height: 100vh;
+
+  main {
+    margin-top: 100px;
+  }
+
+  .listing {
+    list-style: none;
+    padding: 10px;
+    padding-left: 0 !important;
+    margin-left: 0;
+
+    li {
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+    }
+  }
+
+}

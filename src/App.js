@@ -23,9 +23,9 @@ function App() {
               </Routes>
             </div>
           </main>
-          <footer class="container">
+          {/* <footer class="container">
             <p>&copy; Company 2025</p>
-          </footer>
+          </footer> */}
         </Provider>
       </Suspense>
     </div>
