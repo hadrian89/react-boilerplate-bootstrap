@@ -1,13 +1,12 @@
 import React, { lazy, Suspense } from "react";
+import { Provider } from "react-redux";
+import { Routes, Route } from "react-router-dom";
 
 import store from "./store.js";
-import { Provider } from "react-redux";
+import Navbar from "./components/Navbar";
 
-import { Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar.jsx";
-
-const UserList = lazy(() => import("./containers/Users/UserList.jsx"));
-const Practice = lazy(() => import("./containers/practice/Practice.jsx"));
+const UserList = lazy(() => import("./containers/Users/UserList"));
+const Practice = lazy(() => import("./containers/practice/Practice"));
 
 function App() {
   return (
@@ -20,8 +19,6 @@ function App() {
               <Routes>
                 <Route path="/" element={<Practice />} />
                 <Route path="/users" element={<UserList />} />
-                {/* <Route path="/to-do" element={<TaskList />} />
-              <Route path="/memo-callback" element={<MemoCallback />} /> */}
                 <Route path="*" element={<>Page not found</>} />
               </Routes>
             </div>
